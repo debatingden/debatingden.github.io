@@ -1,0 +1,208 @@
+<!-- // index.js can remain empty for now since we'll primarily use HTML/CSS
+// Let's create the basic file structure for GitHub Pages
+
+/*
+Recommended file structure:
+- index.html (main page)
+- css/
+  - style.css
+- js/
+  - index.js (this file)
+- images/
+- README.md
+*/
+
+// Any JavaScript functionality for the debating den website will go here
+// This file will be linked to index.html -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debating Den - Northeastern University</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <h1>Debating Den</h1>
+            <img src="images/roux_logo.png" alt="Northeastern University Logo" class="neu-logo">
+        </div>
+        <div class="burger-menu">
+            <div class="burger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-items">
+                <a href="#about">About Us</a>
+                <a href="#events">RSVP</a>
+                <a href="#team">Our Team</a>
+                <a href="#location">Location</a>
+                <a href="#contact">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Images -->
+    <!-- Recommended dimensions: 3 images of 400x300px each for desktop, responsive for mobile -->
+    <section class="hero">
+        <div class="hero-images">
+            <img src="images/Untitled design.png" alt="Debate Image 1">
+            <!-- <img src="images/pp2.jpg" alt="Debate Image 2">
+            <img src="images/pp3.jpg" alt="Debate Image 3"> -->
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <div class="about-content">
+            <p>Welcome to the Debating Den at Northeastern University! We are a passionate community of debaters, critical thinkers, and public speakers.</p>
+            
+            <h3>What We Do</h3>
+            <ul>
+                <li>Organize monthly debate sessions on contemporary topics</li>
+                <li>Provide public speaking workshops</li>
+                <li>Develop critical thinking and argumentation skills</li>
+                <li>Create networking opportunities with debate enthusiasts</li>
+            </ul>
+        </div>
+        <!-- <div class="logo-specs">
+            <p><em>Note: For optimal display, use logo dimensions of 150x50px</em></p>
+        </div> -->
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="events">
+        <h2>Upcoming Events</h2>
+        <div class="event-card">
+            <h3>Birthright Citizenship</h3>
+            <p class="event-datetime">Collaboration Cafe | Friday, March 21st 2025 | 5:00 PM - 6:00 PM ET</p>
+            <br
+            <p class="event-description">Join us for an exciting debate tournament focusing on current US birthright citizenship issue. Teams will analyze and debate changes in US birthright citizenship while developing critical thinking and public speaking skills.</p>
+            <!-- <p class="event-details">Open to all experience levels. Training sessions available before the event. Refreshments will be provided.</p> -->
+            <a href="https://forms.google.com/your-form-link" class="rsvp-button">RSVP Now</a>
+        </div>
+    </section>
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <h2>The Team</h2>
+        <div class="team-content">
+            <div class="team-intro">
+                <p>Meet the team that makes the Debating Den possible!</p>
+            </div>
+            <div class="team-members">
+                <div class="member">
+                    <h3>Vyas Kadiyala</h3>
+                    <p>Founder</p>
+                </div>
+                <div class="member">
+                    <h3>Sathvik Tummala</h3>
+                    <p>Technical Coordinator</p>
+                </div>
+                <!-- <div class="member">
+                    <h3>Emily Rodriguez</h3>
+                    <p>Events Director & Public Relations</p>
+                </div>
+                <div class="member">
+                    <h3>James Wilson</h3>
+                    <p>Research Head & Strategy Advisor</p>
+                </div>
+                <div class="member">
+                    <h3>Priya Patel</h3>
+                    <p>Outreach Coordinator & Social Media Manager</p>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .team {
+            padding: 4rem 2rem;
+            background: linear-gradient(45deg, var(--light-color), #fff);
+            position: relative;
+        }
+
+        .team h2 {
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .team-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 3rem;
+            font-style: italic;
+            color: var(--dark-color);
+        }
+
+        .team-members {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .member {
+            padding: 1.5rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            border-left: 4px solid var(--secondary-color);
+        }
+
+        .member:hover {
+            transform: translateY(-5px);
+        }
+
+        .member h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .member p {
+            color: var(--dark-color);
+            font-size: 0.9rem;
+        }
+    </style>
+
+    <!-- Location Section -->
+    <section id="location" class="location">
+        <h2>Find Us Here</h2>
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.0457982433594!2d-70.25161548451425!3d43.657241279121214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb29c72ea76a741%3A0x7994bf7c1d03ae38!2s100%20Fore%20St%2C%20Portland%2C%20ME%2004101!5e0!3m2!1sen!2sus!4v1628183831584!5m2!1sen!2sus"
+                width="100%" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="social-links">
+            <a href="https://instagram.com/debatingden" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="contact-info">
+            <a href="mailto:debatingden@gmail.com">debatingden@gmail.com</a>
+        </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
+
